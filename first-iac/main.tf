@@ -5,6 +5,6 @@ terraform {
 }
 
 resource "local_file" "this" {
-  content  = "Hello, Payfit !"
+  content  = var.file_content
   filename = "${path.module}/test.txt"
 }
